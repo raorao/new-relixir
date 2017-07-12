@@ -17,7 +17,9 @@ defmodule NewRelixir.Mixfile do
 
   def application do
     [mod: {NewRelixir, []},
-     applications: [:logger, :lhttpc]]
+     applications: [:logger, :lhttpc],
+     included_applications: [:statman, :newrelic]
+    ]
   end
 
   defp deps do
